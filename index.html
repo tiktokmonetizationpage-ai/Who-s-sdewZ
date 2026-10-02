@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Who's sdwZ</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 20% 20%, #1479ff55, transparent 35%),
+        radial-gradient(circle at 80% 80%, #00b7ff44, transparent 35%),
+        linear-gradient(135deg, #02040a, #061a36, #000814);
+}
+
+/* Liquid background bubbles */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+body::before {
+    width: 260px;
+    height: 260px;
+    background: #008cff66;
+    top: -80px;
+    left: -80px;
+}
+
+body::after {
+    width: 300px;
+    height: 300px;
+    background: #0055ff55;
+    bottom: -100px;
+    right: -80px;
+}
+
+.container {
+    width: 92%;
+    max-width: 450px;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+/* Profile */
+
+.profile {
+    width: 105px;
+    height: 105px;
+    margin: auto;
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #ffffff55, #168cff44);
+
+    border: 2px solid #ffffff88;
+
+    box-shadow:
+        0 0 25px #008cff88,
+        inset 0 0 20px #ffffff22;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    backdrop-filter: blur(15px);
+}
+
+h1 {
+    margin-top: 18px;
+    font-size: 32px;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 15px #168cff,
+        0 0 30px #168cff55;
+}
+
+.subtitle {
+    margin-top: 8px;
+    color: #d7e9ff;
+    font-size: 14px;
+}
+
+/* Cookies */
+
+.cookies {
+    margin: 25px 0;
+
+    padding: 13px 20px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        inset 0 0 15px rgba(255,255,255,0.05),
+        0 8px 30px rgba(0,0,0,0.3);
+
+    font-size: 15px;
+}
+
+/* Social buttons */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68px;
+
+    text-decoration: none;
+    color: white;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.18),
+            rgba(255,255,255,0.04)
+        );
+
+    border: 1px solid rgba(255,255,255,0.28);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.3),
+        0 10px 30px rgba(0,0,0,0.3);
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+.social::before {
+    content: "";
+
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+
+    left: -50px;
+    top: -50px;
+
+    filter: blur(10px);
+}
+
+.social:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+        0 0 25px #168cff66,
+        inset 0 0 20px #ffffff12;
+}
+
+.icon {
+    position: absolute;
+    left: 20px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 21px;
+}
+
+.name {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    opacity: 0.7;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 30px;
+    color: #8fa8c4;
+    font-size: 12px;
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    .social {
+        height: 62px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        S
+    </div>
+
+    <h1>Who's sdwZ</h1>
+
+    <p class="subtitle">
+        Follow me everywhere 🌐
+    </p>
+
+    <div class="cookies">
+        Followers for cookies 🍪
+    </div>
+
+    <div class="socials">
+
+        <!-- TikTok -->
+        <a
+            class="social"
+            href="https://www.tiktok.com/@s.hasarel"
+            target="_blank"
+        >
+            <div class="icon">♪</div>
+
+            <span class="name">TikTok</span>
+
+            <span class="arrow">→</span>
+        </a>
+
+
+        <!-- YouTube -->
+        <a
+            class="social"
+            href="https://www.youtube.com/@s.hasarell"
+            target="_blank"
+        >
+            <div class="icon">▶</div>
+
+            <span class="name">YouTube</span>
+
+            <span class="arrow">→</span>
+        </a>
+
+
+        <!-- Facebook -->
+        <a
+            class="social"
+            href="https://www.facebook.com/share/19XHovcLUA/"
+            target="_blank"
+        >
+            <div class="icon">f</div>
+
+            <span class="name">Facebook</span>
+
+            <span class="arrow">→</span>
+        </a>
+
+
+        <!-- WhatsApp -->
+        <a
+            class="social"
+            href="https://wa.me/94764710434"
+            target="_blank"
+        >
+            <div class="icon">☏</div>
+
+            <span class="name">WhatsApp</span>
+
+            <span class="arrow">→</span>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Who's sdwZ
+    </div>
+
+</div>
+
+</body>
+</html>
